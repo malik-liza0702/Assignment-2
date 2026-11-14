@@ -112,7 +112,7 @@ Example AUTHOR DATA (Sneha Kulkarni, as of 31 Dec 2025):
 
 | Setting | Value | Why |
 |---|---|---|
-| Model | `Config.gemini_model` (default `gemini-3.5-flash-lite`) | Replies in seconds; the facts are precomputed, so a larger model adds little |
+| Model | `Config.gemini_model` (default `gemini-3.5-flash`) | Replies in seconds; the facts are precomputed, so a larger model adds little |
 | Timeout / retries | 20 s, 2 tries, 1 s apart | Keeps the worst case around 41 s, inside Bubble's synchronous wait |
 | temperature | 0.4 | Some warmth in the wording, little variation in structure |
 | responseMimeType + responseSchema | JSON `{subject, body_text}` | Parseable output; no regex scraping |
